@@ -1,6 +1,7 @@
 package com.tutorialsninja.testsuite;
 
 import com.tutorialsninja.pages.HomePage;
+import com.tutorialsninja.pages.MyAccounts;
 import com.tutorialsninja.testbase.TestBase;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -10,12 +11,13 @@ public class MyAccountsTest extends TestBase {
 
 
     HomePage homePage = new HomePage();
+    MyAccounts myAccount = new MyAccounts();
 
     @Test
     public void verifyUserShouldNavigateToRegisterPageSuccessfully() {
 
         clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
-        homePage.selectMyAccountOptions("Register");
+        myAccount.selectMyAccountOptions("Register");
 
         String actualText = driver.findElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/h1")).getText();
         String expectedText = "Register Account";
@@ -27,7 +29,7 @@ public class MyAccountsTest extends TestBase {
     public void verifyUserShouldNavigateToLoginPageSuccessfully() {
 
         clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
-        homePage.selectMyAccountOptions("Login");
+        myAccount.selectMyAccountOptions("Login");
 
         String actualText = driver.findElement(By.xpath("//div[@id='account-login']/div[1]/div[1]/div[1]/div[2]/div[1]/h2")).getText();
         String expectedText = "Returning Customer";
@@ -39,7 +41,7 @@ public class MyAccountsTest extends TestBase {
     public void verifyThatUserRegisterAccountSuccessfully() {
 
         clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
-        homePage.selectMyAccountOptions("Register");
+        myAccount.selectMyAccountOptions("Register");
 
         sendKeysToElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/fieldset[1]/div[2]/div[1]/input[1]"), "Miten");
         sendKeysToElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/fieldset[1]/div[3]/div[1]/input[1]"), "Patel");
@@ -54,7 +56,7 @@ public class MyAccountsTest extends TestBase {
 
         clickOnElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/div[1]/div[1]/input[2]"));
 
-        String actualText = driver.findElement(By.xpath("//div[@id='content']/h1")).getText();
+        String actualText = getTextFromElement(By.xpath("//div[@id='content']/h1"));
         String expectedText = "Your Account Has Been Created!";
         Assert.assertEquals(actualText, expectedText);
 
@@ -63,9 +65,9 @@ public class MyAccountsTest extends TestBase {
         clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
 
 
-        homePage.selectMyAccountOptions("Logout");
+        myAccount.selectMyAccountOptions("Logout");
 
-        String actualText1 = driver.findElement(By.xpath("//div[@id='content']/h1")).getText();
+        String actualText1 = getTextFromElement(By.xpath("//div[@id='content']/h1"));
         String expectedText1 = "Account Logout";
         Assert.assertEquals(actualText1, expectedText1);
 
@@ -77,22 +79,22 @@ public class MyAccountsTest extends TestBase {
     public void verifyThatUserShouldLoginAndLogoutSuccessfully() {
 
         clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
-        homePage.selectMyAccountOptions("Login");
+        myAccount.selectMyAccountOptions("Login");
 
         sendKeysToElement(By.xpath("//div[@id='account-login']/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/input[1]"), "m4mitzcodebuster@gmail.com");
         sendKeysToElement(By.xpath("//div[@id='account-login']/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/input[1]"), "Codebuster@1234");
 
         clickOnElement(By.xpath("//div[@id='account-login']/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/input[1]"));
 
-        String actualText = driver.findElement(By.xpath("//div[@id='content']/h2[1]")).getText();
+        String actualText = getTextFromElement(By.xpath("//div[@id='content']/h2[1]"));
         String expectedText = "My Account";
         Assert.assertEquals(actualText, expectedText);
 
         clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
 
-        homePage.selectMyAccountOptions("Logout");
+        myAccount.selectMyAccountOptions("Logout");
 
-        String actualText1 = driver.findElement(By.xpath("//div[@id='content']/h1")).getText();
+        String actualText1 = getTextFromElement(By.xpath("//div[@id='content']/h1"));
         String expectedText1 = "Account Logout";
         Assert.assertEquals(actualText1, expectedText1);
 

@@ -13,10 +13,10 @@ public class TopMenuTest extends TestBase {
     @Test
     public void verifyUserShouldNavigateToDesktopsPageSuccessfully() {
 
-        mouseHoverToElementAndClick(By.xpath("//ul[@class='nav navbar-nav']/li[1]/a"));
+        homePage.mouseHoverToDesktop();
         homePage.selectMenu("//ul[@class='nav navbar-nav']/li[1]/div[1]/a");
 
-        String actualText = driver.findElement(By.tagName("h2")).getText();
+        String actualText = getTextFromElement(By.tagName("h2"));
         String expectedText = "Desktops";
         Assert.assertEquals(actualText, expectedText);
     }
@@ -24,10 +24,10 @@ public class TopMenuTest extends TestBase {
     @Test
     public void verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully() {
 
-        mouseHoverToElementAndClick(By.xpath("//ul[@class='nav navbar-nav']/li[2]/a"));
+        homePage.mouseHoverToLaptopsAndNotebooks();
         homePage.selectMenu("//ul[@class='nav navbar-nav']/li[2]/div[1]/a");
 
-        String actualText = driver.findElement(By.tagName("h2")).getText();
+        String actualText = getTextFromElement(By.tagName("h2"));
         String expectedText = "Laptops & Notebooks";
         Assert.assertEquals(actualText, expectedText);
     }
@@ -35,10 +35,10 @@ public class TopMenuTest extends TestBase {
     @Test
     public void verifyUserShouldNavigateToComponentsPageSuccessfully() {
 
-        mouseHoverToElementAndClick(By.xpath("//ul[@class='nav navbar-nav']/li[3]/a"));
+        homePage.mouseHoverToComponents();
         homePage.selectMenu("//ul[@class='nav navbar-nav']/li[3]/div[1]/a");
 
-        String actualText = driver.findElement(By.tagName("h2")).getText();
+        String actualText = getTextFromElement(By.tagName("h2"));
         String expectedText = "Components";
         Assert.assertEquals(actualText, expectedText);
     }

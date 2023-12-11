@@ -30,7 +30,7 @@ public class LaptopsAndNotebooksTest extends TestBase {
 
         clickOnElement(By.xpath("//div[@id='content']/div[4]/div[4]/div[1]/div[2]/div[1]/h4/a"));
 
-        String actualText = driver.findElement(By.xpath("//div[@id='content']/div/div[2]/h1")).getText();
+        String actualText = getTextFromElement(By.xpath("//div[@id='content']/div/div[2]/h1"));
         String expectedText = "MacBook";
         Assert.assertEquals(actualText, expectedText);
 
@@ -44,11 +44,11 @@ public class LaptopsAndNotebooksTest extends TestBase {
 
         clickOnElement(By.linkText("shopping cart"));
 
-        String actualText2 = driver.findElement(By.xpath("//ul[@class='breadcrumb']/li[2]/a")).getText();
+        String actualText2 = getTextFromElement(By.xpath("//ul[@class='breadcrumb']/li[2]/a"));
         String expectedText2 = "Shopping Cart";
         Assert.assertEquals(actualText2, expectedText2);
 
-        String actualText3 = driver.findElement(By.xpath("//div[@class='table-responsive']/table[1]/tbody[1]/tr[1]/td[2]/A")).getText();
+        String actualText3 = getTextFromElement(By.xpath("//div[@class='table-responsive']/table[1]/tbody[1]/tr[1]/td[2]/A"));
         String expectedText3 = "MacBook";
         Assert.assertEquals(actualText3, expectedText3);
 
@@ -57,21 +57,21 @@ public class LaptopsAndNotebooksTest extends TestBase {
 
         clickOnElement(By.xpath("//div[@class='input-group btn-block']/span[1]/button[1]"));
 
-        String actualText4 = driver.findElement(By.xpath("//div[@id='checkout-cart']/div[1]")).getText();
+        String actualText4 = getTextFromElement(By.xpath("//div[@id='checkout-cart']/div[1]"));
         String expectedText4 = "Success: You have modified your shopping cart!\n" + "×";
         Assert.assertEquals(actualText4, expectedText4);
 
-        String actualText5 = driver.findElement(By.xpath("//div[@id='content']/div[2]/div/table/tbody/tr[4]/td[2]")).getText();
+        String actualText5 = getTextFromElement(By.xpath("//div[@id='content']/div[2]/div/table/tbody/tr[4]/td[2]"));
         String expectedText5 = "$1,204.00";
         Assert.assertEquals(actualText5, expectedText5);
 
         clickOnElement(By.xpath("//div[@id='content']/div[3]/div[2]/a[1]"));
 
-        String actualText6 = driver.findElement(By.xpath("//div[@id='checkout-checkout']/div[1]/div[1]/h1")).getText();
+        String actualText6 = getTextFromElement(By.xpath("//div[@id='checkout-checkout']/div[1]/div[1]/h1"));
         String expectedText6 = "Checkout";
         Assert.assertEquals(actualText6, expectedText6);
 
-        String actualText7 = driver.findElement(By.xpath("//div[@id='checkout-checkout']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/h2")).getText();
+        String actualText7 = getTextFromElement(By.xpath("//div[@id='checkout-checkout']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/h2"));
         String expectedText7 = "New Customer";
         Assert.assertEquals(actualText7, expectedText7);
 
@@ -93,7 +93,7 @@ public class LaptopsAndNotebooksTest extends TestBase {
 
         clickOnElement(By.xpath("//div[@id='content']/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/input"));
 
-        String actualText8 = driver.findElement(By.xpath("//div[@id='content']/div[1]/div[3]/div[2]/div[1]/div[1]")).getText();
+        String actualText8 = getTextFromElement(By.xpath("//div[@id='content']/div[1]/div[3]/div[2]/div[1]/div[1]"));
         String expectedText8 = "Warning: No Payment options are available. Please contact us for assistance!";
         Assert.assertEquals(actualText8, expectedText8);
 
@@ -103,7 +103,7 @@ public class LaptopsAndNotebooksTest extends TestBase {
 
         clickOnElement(By.xpath("//div[@id='content']/div[1]/div[3]/div[2]/div[1]/div[2]/div[1]/input[2]"));
 
-        String actualText9 = driver.findElement(By.xpath("//div[@id='content']/div[1]/div[3]/div[2]/div[1]/div[1]")).getText();
+        String actualText9 = getTextFromElement(By.xpath("//div[@id='content']/div[1]/div[3]/div[2]/div[1]/div[1]"));
         String expectedText9 = "Warning: No Payment options are available. Please contact us for assistance!";
         Assert.assertEquals(actualText9, expectedText9);
 

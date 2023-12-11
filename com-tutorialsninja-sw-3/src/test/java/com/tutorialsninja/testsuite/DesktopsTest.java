@@ -29,7 +29,7 @@ public class DesktopsTest extends TestBase {
 
         clickOnElement(By.xpath("//div[@id='content']/div[4]/div[3]/div/div[2]/div/h4/a"));
 
-        String actualText = driver.findElement(By.xpath("//div[@id='content']/div/div[2]/h1")).getText();
+        String actualText = getTextFromElement(By.xpath("//div[@id='content']/div/div[2]/h1"));
         String expectedText = "HP LP3065";
         Assert.assertEquals(actualText, expectedText);
 
@@ -41,29 +41,29 @@ public class DesktopsTest extends TestBase {
 
         clickOnElement(By.id("button-cart"));
 
-        String actualText1 = driver.findElement(By.xpath("//div[@class='alert alert-success alert-dismissible']")).getText();
+        String actualText1 = getTextFromElement(By.xpath("//div[@class='alert alert-success alert-dismissible']"));
         String expectedText1 = "Success: You have added HP LP3065 to your shopping cart!\n" + "×";
         Assert.assertEquals(actualText1, expectedText1);
 
         clickOnElement(By.linkText("shopping cart"));
 
-        String actualText2 = driver.findElement(By.xpath("//ul[@class='breadcrumb']/li[2]/a")).getText();
+        String actualText2 = getTextFromElement(By.xpath("//ul[@class='breadcrumb']/li[2]/a"));
         String expectedText2 = "Shopping Cart";
         Assert.assertEquals(actualText2, expectedText2);
 
-        String actualText3 = driver.findElement(By.xpath("//div[@class='table-responsive']/table[1]/tbody[1]/tr[1]/td[2]/A")).getText();
+        String actualText3 = getTextFromElement(By.xpath("//div[@class='table-responsive']/table[1]/tbody[1]/tr[1]/td[2]/A"));
         String expectedText3 = "HP LP3065";
         Assert.assertEquals(actualText3, expectedText3);
 
-        String actualText4 = driver.findElement(By.xpath("//div[@class='table-responsive']/table[1]/tbody[1]/tr[1]/td[2]/small[1]")).getText();
+        String actualText4 = getTextFromElement(By.xpath("//div[@class='table-responsive']/table[1]/tbody[1]/tr[1]/td[2]/small[1]"));
         String expectedText4 = "Delivery Date:2022-11-30";
         Assert.assertEquals(actualText4, expectedText4);
 
-        String actualText5 = driver.findElement(By.xpath("//div[@class='table-responsive']/table[1]/tbody[1]/tr[1]/td[3]")).getText();
+        String actualText5 = getTextFromElement(By.xpath("//div[@class='table-responsive']/table[1]/tbody[1]/tr[1]/td[3]"));
         String expectedText5 = "Product 21";
         Assert.assertEquals(actualText5, expectedText5);
 
-        String actualText6 = driver.findElement(By.xpath("//div[@id='content']/div[2]/div/table/tbody/tr[4]/td[2]")).getText();
+        String actualText6 = getTextFromElement(By.xpath("//div[@id='content']/div[2]/div/table/tbody/tr[4]/td[2]"));
         String expectedText6 = "$122.00";
         Assert.assertEquals(actualText6, expectedText6);
     }

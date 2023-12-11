@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8220e9d4-24ff-42ff-b7f6-6622f1d27374" name="Changes" comment="Push">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/MyAccountsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/pages/Desktops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/pages/LaptopsAndNotebooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/pages/MyAccounts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/DesktopsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/DesktopsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/LaptopsAndNotebooksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/LaptopsAndNotebooksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/MyAccountsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/MyAccountsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/TopMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/TopMenuTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +36,9 @@
   "associatedIndex": 7
 }]]></component>
   <component name="ProjectId" id="2ZO7PZSFEfLKfDZnlIqkkJeqd3U" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -72,24 +81,7 @@
       <recent name="com.tutorialsninja.propertyreader" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyAccountsTest">
-    <configuration name="DesktopsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="com-tutorialsninja-sw-3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tutorialsninja.testsuite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
-      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.DesktopsTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TopMenuTest.verifyUserShouldNavigateToDesktopsPageSuccessfully">
     <configuration name="LaptopsAndNotebooksTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com-tutorialsninja-sw-3" />
       <extension name="coverage">
@@ -160,13 +152,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TopMenuTest.verifyUserShouldNavigateToDesktopsPageSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com-tutorialsninja-sw-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorialsninja.testsuite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
+      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.TopMenuTest" />
+      <option name="METHOD_NAME" value="verifyUserShouldNavigateToDesktopsPageSuccessfully" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TopMenuTest.verifyUserShouldNavigateToDesktopsPageSuccessfully" />
         <item itemvalue="TestNG.MyAccountsTest" />
         <item itemvalue="TestNG.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully" />
         <item itemvalue="TestNG.LaptopsAndNotebooksTest" />
         <item itemvalue="TestNG.LaptopsAndNotebooksTest.verifyProductsPriceDisplayHighToLowSuccessfully" />
-        <item itemvalue="TestNG.DesktopsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +213,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702311555800</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Push">
+      <option name="closed" value="true" />
+      <created>1702315278764</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702315278764</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Push">
+      <option name="closed" value="true" />
+      <created>1702315391500</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702315391500</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
