@@ -12,4 +12,10 @@ public class HomePage extends Utility {
         WebElement menuLink = driver.findElement(By.xpath(menu));
         menuLink.click();
     }
+
+    public void selectMyAccountOptions(String option) {
+        WebElement menuLink = driver.findElement(By.linkText(option));
+        menuLink.click();
+
+    }
 }
