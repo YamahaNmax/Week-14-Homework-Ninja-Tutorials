@@ -37,11 +37,11 @@ public class LaptopsAndNotebooksTest extends TestBase {
 
         clickOnElement(By.id("button-cart"));
 
-//        String actualText1 = driver.findElement(By.xpath("//div[@id='product-product']/div[1]")).getText();
-//        String expectedText1 = "Success: You have added MacBook to your shopping cart!\n" +
-//                "×";
-//        System.out.println(actualText1);
-//        Assert.assertEquals(actualText1, expectedText1);
+        String actualText1 = getTextFromElement(By.xpath("//div[@class=\"alert alert-success alert-dismissible\"]"));
+        String expectedText1 = "Success: You have added MacBook to your shopping cart!\n" +
+                "×";
+        System.out.println(actualText1);
+        Assert.assertEquals(actualText1, expectedText1);
 
         clickOnElement(By.linkText("shopping cart"));
 

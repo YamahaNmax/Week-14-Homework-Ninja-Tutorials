@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8220e9d4-24ff-42ff-b7f6-6622f1d27374" name="Changes" comment="Push">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/pages/Desktops.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/pages/LaptopsAndNotebooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/pages/MyAccounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/DesktopsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/DesktopsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/LaptopsAndNotebooksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/LaptopsAndNotebooksTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/MyAccountsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/MyAccountsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/TopMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/TopMenuTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +75,7 @@
       <recent name="com.tutorialsninja.propertyreader" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TopMenuTest">
+  <component name="RunManager" selected="TestNG.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully">
     <configuration name="LaptopsAndNotebooksTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com-tutorialsninja-sw-3" />
       <extension name="coverage">
@@ -93,6 +87,24 @@
       <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
       <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.LaptopsAndNotebooksTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaptopsAndNotebooksTest.verifyProductsPriceDisplayHighToLowSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com-tutorialsninja-sw-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorialsninja.testsuite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
+      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.LaptopsAndNotebooksTest" />
+      <option name="METHOD_NAME" value="verifyProductsPriceDisplayHighToLowSuccessfully" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -111,23 +123,6 @@
       <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.LaptopsAndNotebooksTest" />
       <option name="METHOD_NAME" value="verifyThatUserPlaceOrderSuccessfully" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyAccountsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="com-tutorialsninja-sw-3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tutorialsninja.testsuite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
-      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.MyAccountsTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -171,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully" />
+        <item itemvalue="TestNG.LaptopsAndNotebooksTest.verifyProductsPriceDisplayHighToLowSuccessfully" />
+        <item itemvalue="TestNG.LaptopsAndNotebooksTest" />
         <item itemvalue="TestNG.TopMenuTest" />
         <item itemvalue="TestNG.TopMenuTest.verifyUserShouldNavigateToDesktopsPageSuccessfully" />
-        <item itemvalue="TestNG.MyAccountsTest" />
-        <item itemvalue="TestNG.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully" />
-        <item itemvalue="TestNG.LaptopsAndNotebooksTest" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +223,39 @@
       <option name="project" value="LOCAL" />
       <updated>1702315391500</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Push">
+      <option name="closed" value="true" />
+      <created>1702317423483</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702317423483</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Push">
+      <option name="closed" value="true" />
+      <created>1702317675286</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702317675286</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Push">
+      <option name="closed" value="true" />
+      <created>1702318599556</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702318599556</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Push">
+      <option name="closed" value="true" />
+      <created>1702323906695</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702323906695</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
