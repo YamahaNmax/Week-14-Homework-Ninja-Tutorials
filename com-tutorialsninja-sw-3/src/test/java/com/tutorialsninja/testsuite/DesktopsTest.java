@@ -1,5 +1,6 @@
 package com.tutorialsninja.testsuite;
 
+import com.tutorialsninja.pages.Desktops;
 import com.tutorialsninja.pages.HomePage;
 import com.tutorialsninja.testbase.TestBase;
 import org.openqa.selenium.By;
@@ -8,24 +9,26 @@ import org.testng.annotations.Test;
 
 public class DesktopsTest extends TestBase {
 
+
     HomePage homePage = new HomePage();
+    Desktops desktops = new Desktops();
 
     @Test
     public void verifyProductArrangeInAlphabeticalOrder() {
 
-        mouseHoverToElementAndClick(By.xpath("//ul[@class='nav navbar-nav']/li[1]/a"));
-        homePage.selectMenu("//ul[@class='nav navbar-nav']/li[1]/div[1]/a");
+        homePage.mouseHoverToDesktop();
+        homePage.selectMenu("Show AllDesktops");
 
-        selectByIndexFromDropDown(By.id("input-sort"), 2);
+        desktops.sortByPositionZtoA();
     }
 
     @Test
     public void verifyProductAddedToShoppingCartSuccessfully() {
 
-        mouseHoverToElementAndClick(By.xpath("//ul[@class='nav navbar-nav']/li[1]/a"));
-        homePage.selectMenu("//ul[@class='nav navbar-nav']/li[1]/div[1]/a");
+        homePage.mouseHoverToDesktop();
+        homePage.selectMenu("Show AllDesktops");
 
-        selectByIndexFromDropDown(By.id("input-sort"), 1);
+        desktops.sortByPositionAtoZ();
 
         clickOnElement(By.xpath("//div[@id='content']/div[4]/div[3]/div/div[2]/div/h4/a"));
 
