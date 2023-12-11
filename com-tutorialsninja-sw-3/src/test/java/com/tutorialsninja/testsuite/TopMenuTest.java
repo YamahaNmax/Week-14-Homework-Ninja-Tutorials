@@ -14,7 +14,7 @@ public class TopMenuTest extends TestBase {
     public void verifyUserShouldNavigateToDesktopsPageSuccessfully() {
 
         homePage.mouseHoverToDesktop();
-        homePage.selectMenu("//ul[@class='nav navbar-nav']/li[1]/div[1]/a");
+        homePage.selectMenu("Show AllDesktops");
 
         String actualText = getTextFromElement(By.tagName("h2"));
         String expectedText = "Desktops";
@@ -25,7 +25,7 @@ public class TopMenuTest extends TestBase {
     public void verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully() {
 
         homePage.mouseHoverToLaptopsAndNotebooks();
-        homePage.selectMenu("//ul[@class='nav navbar-nav']/li[2]/div[1]/a");
+        homePage.selectMenu("Show AllLaptops & Notebooks");
 
         String actualText = getTextFromElement(By.tagName("h2"));
         String expectedText = "Laptops & Notebooks";
@@ -36,7 +36,7 @@ public class TopMenuTest extends TestBase {
     public void verifyUserShouldNavigateToComponentsPageSuccessfully() {
 
         homePage.mouseHoverToComponents();
-        homePage.selectMenu("//ul[@class='nav navbar-nav']/li[3]/div[1]/a");
+        homePage.selectMenu("Show AllComponents");
 
         String actualText = getTextFromElement(By.tagName("h2"));
         String expectedText = "Components";

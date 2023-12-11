@@ -26,7 +26,7 @@ public class HomePage extends Utility {
     }
 
     public void selectMenu(String menu) {
-        WebElement menuLink = driver.findElement(By.xpath(menu));
+        WebElement menuLink = driver.findElement(By.linkText(menu));
         menuLink.click();
     }
 

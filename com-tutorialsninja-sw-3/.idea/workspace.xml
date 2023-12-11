@@ -81,7 +81,7 @@
       <recent name="com.tutorialsninja.propertyreader" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TopMenuTest.verifyUserShouldNavigateToDesktopsPageSuccessfully">
+  <component name="RunManager" selected="TestNG.TopMenuTest">
     <configuration name="LaptopsAndNotebooksTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com-tutorialsninja-sw-3" />
       <extension name="coverage">
@@ -93,24 +93,6 @@
       <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
       <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.LaptopsAndNotebooksTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LaptopsAndNotebooksTest.verifyProductsPriceDisplayHighToLowSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="com-tutorialsninja-sw-3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tutorialsninja.testsuite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
-      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.LaptopsAndNotebooksTest" />
-      <option name="METHOD_NAME" value="verifyProductsPriceDisplayHighToLowSuccessfully" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -152,6 +134,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TopMenuTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com-tutorialsninja-sw-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorialsninja.testsuite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
+      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.TopMenuTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TopMenuTest.verifyUserShouldNavigateToDesktopsPageSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com-tutorialsninja-sw-3" />
       <extension name="coverage">
@@ -172,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TopMenuTest" />
         <item itemvalue="TestNG.TopMenuTest.verifyUserShouldNavigateToDesktopsPageSuccessfully" />
         <item itemvalue="TestNG.MyAccountsTest" />
         <item itemvalue="TestNG.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully" />
         <item itemvalue="TestNG.LaptopsAndNotebooksTest" />
-        <item itemvalue="TestNG.LaptopsAndNotebooksTest.verifyProductsPriceDisplayHighToLowSuccessfully" />
       </list>
     </recent_temporary>
   </component>
