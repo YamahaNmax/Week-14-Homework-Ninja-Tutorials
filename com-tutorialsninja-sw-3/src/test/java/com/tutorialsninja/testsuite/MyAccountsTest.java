@@ -36,7 +36,7 @@ public class MyAccountsTest extends TestBase {
     }
 
     @Test
-    public void verifyThatUserRegisterAccountSuccessfully() throws InterruptedException {
+    public void verifyThatUserRegisterAccountSuccessfully() {
 
         clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
         homePage.selectMyAccountOptions("Register");
@@ -74,7 +74,7 @@ public class MyAccountsTest extends TestBase {
     }
 
     @Test
-    public void verifyThatUserShouldLoginAndLogoutSuccessfully() throws InterruptedException {
+    public void verifyThatUserShouldLoginAndLogoutSuccessfully() {
 
         clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
         homePage.selectMyAccountOptions("Login");
