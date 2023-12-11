@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.logging.Logger;
 
-public class Utility extends ManageDriver {
+public class Utility extends ManageDriver{
 
     private static final Logger logger = Logger.getLogger(Utility.class.getName());
 
@@ -134,7 +134,7 @@ public class Utility extends ManageDriver {
     }
 
     //This method will hoover and click
-    public void mouseHoverAndClick(By by,By by1) throws InterruptedException {
+    public void mouseHoverAndClick(By by) throws InterruptedException {
         Actions actions = new Actions(driver);
         WebElement mouseHoover = driver.findElement(by);
         WebElement mouseHoover1=driver.findElement(by);

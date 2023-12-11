@@ -1,10 +1,10 @@
 package com.tutorialsninja.driverfactory;
 
+import com.tutorialsninja.propertyreader.PropertyReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import com.tutorialsninja.propertyreader.PropertyReader;
 
 import java.time.Duration;
 
