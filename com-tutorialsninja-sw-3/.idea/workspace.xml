@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8220e9d4-24ff-42ff-b7f6-6622f1d27374" name="Changes" comment="Push">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/DesktopsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/LaptopsAndNotebooksTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/driverfactory/ManageDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/driverfactory/ManageDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/propertyreader/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/propertyreader/PropertyReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/utilities/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorialsninja/utilities/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testbase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testbase/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/TopMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tutorialsninja/testsuite/TopMenuTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +41,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.DesktopsTest.executor": "Run",
+    "TestNG.LaptopsAndNotebooksTest.executor": "Run",
+    "TestNG.LaptopsAndNotebooksTest.verifyProductsPriceDisplayHighToLowSuccessfully.executor": "Run",
+    "TestNG.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully.executor": "Run",
     "TestNG.TopMenuTest.executor": "Run",
     "TestNG.TopMenuTest.verifyUserShouldNavigateToDesktopsPageSuccessfully.executor": "Run",
     "git-widget-placeholder": "main",
@@ -78,7 +71,7 @@
       <recent name="com.tutorialsninja.propertyreader" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DesktopsTest">
+  <component name="RunManager" selected="TestNG.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully">
     <configuration name="DesktopsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com-tutorialsninja-sw-3" />
       <extension name="coverage">
@@ -90,6 +83,59 @@
       <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
       <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.DesktopsTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaptopsAndNotebooksTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com-tutorialsninja-sw-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorialsninja.testsuite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
+      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.LaptopsAndNotebooksTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaptopsAndNotebooksTest.verifyProductsPriceDisplayHighToLowSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com-tutorialsninja-sw-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorialsninja.testsuite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
+      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.LaptopsAndNotebooksTest" />
+      <option name="METHOD_NAME" value="verifyProductsPriceDisplayHighToLowSuccessfully" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com-tutorialsninja-sw-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorialsninja.testsuite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
+      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.LaptopsAndNotebooksTest" />
+      <option name="METHOD_NAME" value="verifyThatUserPlaceOrderSuccessfully" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -113,29 +159,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TopMenuTest.verifyUserShouldNavigateToDesktopsPageSuccessfully" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="com-tutorialsninja-sw-3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tutorialsninja.testsuite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tutorialsninja.testsuite" />
-      <option name="MAIN_CLASS_NAME" value="com.tutorialsninja.testsuite.TopMenuTest" />
-      <option name="METHOD_NAME" value="verifyUserShouldNavigateToDesktopsPageSuccessfully" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully" />
+        <item itemvalue="TestNG.LaptopsAndNotebooksTest" />
+        <item itemvalue="TestNG.LaptopsAndNotebooksTest.verifyProductsPriceDisplayHighToLowSuccessfully" />
         <item itemvalue="TestNG.DesktopsTest" />
         <item itemvalue="TestNG.TopMenuTest" />
-        <item itemvalue="TestNG.TopMenuTest.verifyUserShouldNavigateToDesktopsPageSuccessfully" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702284210782</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Push">
+      <option name="closed" value="true" />
+      <created>1702308800595</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702308800595</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
