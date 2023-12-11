@@ -1,6 +1,7 @@
 package com.tutorialsninja.testsuite;
 
 import com.tutorialsninja.pages.HomePage;
+import com.tutorialsninja.pages.LaptopsAndNotebooks;
 import com.tutorialsninja.testbase.TestBase;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -9,24 +10,24 @@ import org.testng.annotations.Test;
 public class LaptopsAndNotebooksTest extends TestBase {
 
     HomePage homePage = new HomePage();
+    LaptopsAndNotebooks laptopsAndNotebooks = new LaptopsAndNotebooks();
 
     @Test
     public void verifyProductsPriceDisplayHighToLowSuccessfully() {
 
-        mouseHoverToElementAndClick(By.xpath("//ul[@class='nav navbar-nav']/li[2]/a"));
-        homePage.selectMenu("//ul[@class='nav navbar-nav']/li[2]/div[1]/a");
+        homePage.mouseHoverToLaptopsAndNotebooks();
+        homePage.selectMenu("Show AllLaptops & Notebooks");
 
-        selectByIndexFromDropDown(By.id("input-sort"), 4);
-
+        laptopsAndNotebooks.setHighToLow();
     }
 
     @Test
     public void verifyThatUserPlaceOrderSuccessfully() {
 
-        mouseHoverToElementAndClick(By.xpath("//ul[@class='nav navbar-nav']/li[2]/a"));
-        homePage.selectMenu("//ul[@class='nav navbar-nav']/li[2]/div[1]/a");
+        homePage.mouseHoverToLaptopsAndNotebooks();
+        homePage.selectMenu("Show AllLaptops & Notebooks");
 
-        selectByIndexFromDropDown(By.id("input-sort"), 4);
+        laptopsAndNotebooks.setHighToLow();
 
         clickOnElement(By.xpath("//div[@id='content']/div[4]/div[4]/div[1]/div[2]/div[1]/h4/a"));
 

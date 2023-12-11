@@ -16,10 +16,10 @@ public class MyAccountsTest extends TestBase {
     @Test
     public void verifyUserShouldNavigateToRegisterPageSuccessfully() {
 
-        clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
-        myAccount.selectMyAccountOptions("Register");
+        myAccount.myAccountLink();
+        myAccount.setRegister();
 
-        String actualText = driver.findElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/h1")).getText();
+        String actualText = getTextFromElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/h1"));
         String expectedText = "Register Account";
         Assert.assertEquals(actualText, expectedText);
 
@@ -28,10 +28,10 @@ public class MyAccountsTest extends TestBase {
     @Test
     public void verifyUserShouldNavigateToLoginPageSuccessfully() {
 
-        clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
-        myAccount.selectMyAccountOptions("Login");
+        myAccount.myAccountLink();
+        myAccount.setLogin();
 
-        String actualText = driver.findElement(By.xpath("//div[@id='account-login']/div[1]/div[1]/div[1]/div[2]/div[1]/h2")).getText();
+        String actualText = getTextFromElement(By.xpath("//div[@id='account-login']/div[1]/div[1]/div[1]/div[2]/div[1]/h2"));
         String expectedText = "Returning Customer";
         Assert.assertEquals(actualText, expectedText);
 
@@ -40,8 +40,8 @@ public class MyAccountsTest extends TestBase {
     @Test
     public void verifyThatUserRegisterAccountSuccessfully() {
 
-        clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
-        myAccount.selectMyAccountOptions("Register");
+        myAccount.myAccountLink();
+        myAccount.setRegister();
 
         sendKeysToElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/fieldset[1]/div[2]/div[1]/input[1]"), "Miten");
         sendKeysToElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/fieldset[1]/div[3]/div[1]/input[1]"), "Patel");
@@ -65,7 +65,7 @@ public class MyAccountsTest extends TestBase {
         clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
 
 
-        myAccount.selectMyAccountOptions("Logout");
+        myAccount.setLogout();
 
         String actualText1 = getTextFromElement(By.xpath("//div[@id='content']/h1"));
         String expectedText1 = "Account Logout";
@@ -78,8 +78,8 @@ public class MyAccountsTest extends TestBase {
     @Test
     public void verifyThatUserShouldLoginAndLogoutSuccessfully() {
 
-        clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
-        myAccount.selectMyAccountOptions("Login");
+        myAccount.myAccountLink();
+        myAccount.setLogin();
 
         sendKeysToElement(By.xpath("//div[@id='account-login']/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/input[1]"), "m4mitzcodebuster@gmail.com");
         sendKeysToElement(By.xpath("//div[@id='account-login']/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[2]/input[1]"), "Codebuster@1234");
@@ -92,7 +92,7 @@ public class MyAccountsTest extends TestBase {
 
         clickOnElement(By.xpath("//nav[@id='top']/div[1]/div[2]/ul/li[2]"));
 
-        myAccount.selectMyAccountOptions("Logout");
+        myAccount.setLogout();
 
         String actualText1 = getTextFromElement(By.xpath("//div[@id='content']/h1"));
         String expectedText1 = "Account Logout";
