@@ -6,9 +6,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.*;
 
 import java.time.Duration;
 import java.util.Date;
@@ -175,7 +173,7 @@ public class Utility extends ManageDriver{
 
     //*********************************OTHERS METHODS****************************************
 
-    // This method will verify text displayed on web page
+//     This method will verify text displayed on web page
 //    public void verifyText(String expectedMessage, By by, String displayMessage) {
 //        String actualMessage = getTextFromElement(by);
 //        Assert.assertEquals(displayMessage, expectedMessage, actualMessage);
@@ -184,11 +182,11 @@ public class Utility extends ManageDriver{
     //************************** Waits Methods *********************************************
 
     // This method will use to wait until visibility of element
-//    public WebElement waitUnitVisibilityOfElementLocated(By by, int time) {
-//
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
-//        return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-//    }
+    public WebElement waitUnitVisibilityOfElementLocated(By by, int time) {
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+    }
 
 
 

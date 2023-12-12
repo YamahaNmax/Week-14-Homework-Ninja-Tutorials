@@ -40,7 +40,6 @@ public class LaptopsAndNotebooksTest extends TestBase {
         String actualText1 = getTextFromElement(By.xpath("//div[@class=\"alert alert-success alert-dismissible\"]"));
         String expectedText1 = "Success: You have added MacBook to your shopping cart!\n" +
                 "×";
-        System.out.println(actualText1);
         Assert.assertEquals(actualText1, expectedText1);
 
         clickOnElement(By.linkText("shopping cart"));

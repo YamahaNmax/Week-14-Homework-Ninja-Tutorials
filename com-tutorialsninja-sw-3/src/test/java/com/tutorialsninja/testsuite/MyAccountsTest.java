@@ -45,7 +45,7 @@ public class MyAccountsTest extends TestBase {
 
         sendKeysToElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/fieldset[1]/div[2]/div[1]/input[1]"), "Miten");
         sendKeysToElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/fieldset[1]/div[3]/div[1]/input[1]"), "Patel");
-        sendKeysToElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/fieldset[1]/div[4]/div[1]/input[1]"), "Mitem4mitzcodebuster1@gmail.comn");
+        sendKeysToElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/fieldset[1]/div[4]/div[1]/input[1]"), "Mitem4mitzcodebuster55055@gmail.comn");
         sendKeysToElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/fieldset[1]/div[5]/div[1]/input[1]"), "0123456789");
         sendKeysToElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/fieldset[2]/div[1]/div[1]/input[1]"), "Codebuster@1234");
         sendKeysToElement(By.xpath("//div[@id='account-register']/div[1]/div[1]/form/fieldset[2]/div[2]/div[1]/input[1]"), "Codebuster@1234");
